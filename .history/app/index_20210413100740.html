@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeIT store | MY WISHLIST</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header id="header-section" class="header">
+
+    <div class="container">
+
+      <div class="header__wrapper">
+
+        <a class="logo" href="#body">
+          <img class="logo__img" src="/images/logo.png" alt="logo image">
+        </a>
+
+        <div class="header__inner">
+
+          <nav class="menu">
+
+            <ul class="menu__list">
+
+              <li class="menu__item">
+
+                <a class="menu__link menu__link--active" href="#">
+                  Home
+                </a>
+
+              </li>
+
+              <li class="menu__item menu__item--popup">
+
+                <a class="menu__link" href="#">
+                  All Brands
+
+                  <svg class="menu__arrow-down">
+                    <use xlink:href="images/sprite.svg#arrow-down"></use>
+                  </svg>
+                  <svg class="menu__arrow-up">
+                    <use xlink:href="images/sprite.svg#arrow-down"></use>
+                  </svg>
+                </a>
+
+                <ul class="sublist">
+                  <li class="subitem">first</li>
+                  <li class="subitem">second</li>
+                  <li class="subitem">third</li>
+                </ul>
+
+              </li>
+
+              <li class="menu__item">
+
+                <a class="menu__link" href="#">
+                  Latest
+                </a>
+
+              </li>
+
+              <li class="menu__item">
+
+                <a class="menu__link" href="#">
+                  Featured
+                </a>
+
+              </li>
+
+              <li class="menu__item">
+
+                <a class="menu__link" href="#">
+                  About
+                </a>
+
+              </li>
+
+              <li class="menu__item">
+
+                <a class="menu__link" href="#">
+                  Blog
+                </a>
+
+              </li>
+
+              <li class="menu__item">
+
+                <a class="menu__link" href="#">
+                  Contact
+                </a>
+
+              </li>
+
+              <li class="menu__item">
+
+                <a class="menu__link" href="#">
+                  <svg class="menu__search">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                  </svg>
+                </a>
+
+              </li>
+
+
+            </ul>
+
+          </nav>
+
+          <div class="menu-nav">
+
+            <button class="menu-nav__btn" href="#">
+
+              <svg class="menu-nav__find">
+                <use xlink:href="images/sprite.svg#bg-find"></use>
+              </svg>
+
+            </button>
+
+            <button class="menu-nav__popup">
+
+              <svg class="menu-nav__ellipse">
+                <use xlink:href="images/sprite.svg#bg-ellipse"></use>
+              </svg>
+
+            </button>
+
+          </div>
+
+          <button class="header__btn">
+            <svg class="header__cart">
+              <use xlink:href="./images/sprite.svg#cart"></use>
+            </svg>
+
+            $<span class="header__sum">460.00</span>
+
+            <div class="header__ellips">
+              <span>2</span>
+            </div>
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="header__popup">
+
+        <form class="header__search" action="#">
+
+          <label for="sub-search" class="header__label">Search</label>
+          <input id="sub-search" class="header__form-input" type="search" name="search" placeholder="Search" required>
+
+          <button class="header__form-btn" type="submit">Search</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <div class="top" style="background-image: url('./images/content/top-bg.jpg');">
+
+      <div class="container">
+
+        <div class="top__inner">
+
+          <h2 class="top__title">
+            My wishlist
+          </h2>
+
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">
+                  Home
+                </a>
+              </li>
+
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__end" href="#">
+                  My wishlist
+                </span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <section class="content">
+      <div class="container">
+        <div class="content__wrapper">
+
+          <form action="" class="content__form">
+
+            <label for="textInput" class="content__label">Search</label>
+            <input id="textInput" class="content__search" type="text" placeholder="search" name="search">
+
+            <button id="submit" class="content__btn" type="reset" disabled>Clear list</button>
+
+          </form>
+
+          <div class=" row content__list">
+
+            <article class="product-card cf col-3 col-lg-4">
+              <div class="product-card__content">
+                <div class="product-card__image">
+                  <button id="remove" class="product-card__button" data-del="delete">Remove from list</button>
+                  <img class="product-card__img" src="./images/content/products/1.png" alt="images phone">
+
+                </div>
+
+                <span class="product-card__title">Huawei mate s</span>
+
+                <div class="product-card__price">
+                  <div class="product-card__newprice">
+                    $
+                    <span class="product-card__num">280.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card__bottom">
+                <button class="product-card__btn" data-del="delete">
+                  <svg class="product-card__icon product-card__icon--remove" data-del="delete">
+                    <use xlink:href="images/sprite.svg#remove"></use>
+                  </svg>
+                </button>
+
+                <button class="product-card__btn">
+                  <svg class="product-card__icon product-card__icon--cart">
+                    <use xlink:href="images/sprite.svg#product-cart"></use>
+                  </svg>
+                </button>
+              </div>
+              <a class="link" href="#"></a>
+
+            </article>
+
+            <article class="product-card cf col-3">
+              <div class="product-card__content">
+                <div class="product-card__image">
+                  <button class="product-card__button" data-del="delete">Remove from list</button>
+                  <img class="product-card__img" src="./images/content/products/2.png" alt="images phone">
+
+                </div>
+
+                <span class="product-card__title">Sony xperia Z5</span>
+
+                <div class="product-card__price">
+                  <div class="product-card__newprice">
+                    $
+                    <span class="product-card__num">550.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card__bottom">
+                <button class="product-card__btn" data-del="delete">
+                  <svg class="product-card__icon product-card__icon--remove">
+                    <use xlink:href="images/sprite.svg#remove"></use>
+                  </svg>
+                </button>
+
+                <button class="product-card__btn">
+                  <svg class="product-card__icon product-card__icon--cart">
+                    <use xlink:href="images/sprite.svg#product-cart"></use>
+                  </svg>
+                </button>
+              </div>
+              <a class="link" href="#"></a>
+
+            </article>
+
+            <article class="product-card cf col-3">
+              <div class="product-card__content">
+                <div class="product-card__image">
+                  <button class="product-card__button" data-del="delete">Remove from list</button>
+                  <img class="product-card__img" src="./images/content/products/3.png" alt="images phone">
+
+                </div>
+
+                <span class="product-card__title">Xaomi Mi 4i</span>
+
+                <div class="product-card__price">
+                  <div class="product-card__newprice">
+                    $
+                    <span class="product-card__num">350.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card__bottom">
+                <button class="product-card__btn" data-del="delete">
+                  <svg class="product-card__icon product-card__icon--remove">
+                    <use xlink:href="images/sprite.svg#remove"></use>
+                  </svg>
+                </button>
+
+                <button class="product-card__btn">
+                  <svg class="product-card__icon product-card__icon--cart">
+                    <use xlink:href="images/sprite.svg#product-cart"></use>
+                  </svg>
+                </button>
+              </div>
+              <a class="link" href="#"></a>
+
+            </article>
+
+            <article class="product-card cf col-3">
+              <div class="product-card__content">
+                <div class="product-card__image">
+                  <button class="product-card__button" data-del="delete">Remove from list</button>
+                  <img class="product-card__img" src="./images/content/products/4.png" alt="images phone">
+
+                </div>
+
+                <span class="product-card__title">Huawei g8 4g</span>
+
+                <div class="product-card__price">
+                  <div class="product-card__newprice">
+                    $
+                    <span class="product-card__num">350.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card__bottom">
+                <button class="product-card__btn" data-del="delete">
+                  <svg class="product-card__icon product-card__icon--remove">
+                    <use xlink:href="images/sprite.svg#remove"></use>
+                  </svg>
+                </button>
+
+                <button class="product-card__btn">
+                  <svg class="product-card__icon product-card__icon--cart">
+                    <use xlink:href="images/sprite.svg#product-cart"></use>
+                  </svg>
+                </button>
+              </div>
+              <a class="link" href="#"></a>
+
+            </article>
+
+            <article class="product-card cf col-3">
+              <div class="product-card__content">
+                <div class="product-card__image">
+                  <button class="product-card__button" data-del="delete">Remove from list</button>
+                  <img class="product-card__img" src="./images/content/products/5.png" alt="images phone">
+
+                </div>
+
+                <span class="product-card__title">iPhone Rose Gold</span>
+
+                <div class="product-card__price">
+                  <div class="product-card__newprice">
+                    $
+                    <span class="product-card__num">280.00</span>
+                  </div>
+
+                  <div class="product-card__oldprice">
+                    $
+                    <span class="product-card__num">649.00</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="product-card__bottom">
+                <button class="product-card__btn" data-del="delete">
+                  <svg class="product-card__icon product-card__icon--remove">
+                    <use xlink:href="images/sprite.svg#remove"></use>
+                  </svg>
+                </button>
+
+                <button class="product-card__btn">
+                  <svg class="product-card__icon product-card__icon--cart">
+                    <use xlink:href="images/sprite.svg#product-cart"></use>
+                  </svg>
+                </button>
+              </div>
+              <a class="link" href="#"></a>
+
+            </article>
+
+            <article class="product-card cf col-3">
+              <div class="product-card__content">
+                <div class="product-card__image">
+                  <button class="product-card__button" data-del="delete">Remove from list</button>
+                  <img class="product-card__img" src="./images/content/products/6.png" alt="images phone">
+
+                </div>
+
+                <span class="product-card__title">Huawei g8 4c</span>
+
+                <div class="product-card__price">
+                  <div class="product-card__newprice">
+                    $
+                    <span class="product-card__num">350.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card__bottom">
+                <button class="product-card__btn" data-del="delete">
+                  <svg class="product-card__icon product-card__icon--remove">
+                    <use xlink:href="images/sprite.svg#remove"></use>
+                  </svg>
+                </button>
+
+                <button class="product-card__btn">
+                  <svg class="product-card__icon product-card__icon--cart">
+                    <use xlink:href="images/sprite.svg#product-cart"></use>
+                  </svg>
+                </button>
+              </div>
+              <a class="link" href="#"></a>
+
+            </article>
+
+            <article class="product-card cf col-3">
+              <div class="product-card__content">
+                <div class="product-card__image">
+                  <button class="product-card__button" data-del="delete">Remove from list</button>
+                  <img class="product-card__img" src="./images/content/products/7.png" alt="images phone">
+
+                </div>
+
+                <span class="product-card__title">Galaxy Core Prime</span>
+
+                <div class="product-card__price">
+                  <div class="product-card__newprice">
+                    $
+                    <span class="product-card__num">390.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card__bottom">
+                <button class="product-card__btn" data-del="delete">
+                  <svg class="product-card__icon product-card__icon--remove">
+                    <use xlink:href="images/sprite.svg#remove"></use>
+                  </svg>
+                </button>
+
+                <button class="product-card__btn">
+                  <svg class="product-card__icon product-card__icon--cart">
+                    <use xlink:href="images/sprite.svg#product-cart"></use>
+                  </svg>
+                </button>
+              </div>
+              <a class="link" href="#"></a>
+
+            </article>
+
+            <article class="product-card cf col-3">
+              <div class="product-card__content">
+                <div class="product-card__image">
+                  <button class="product-card__button" data-del="delete">Remove from list</button>
+                  <img class="product-card__img" src="./images/content/products/8.png" alt="images phone">
+
+                </div>
+
+                <span class="product-card__title">Apple iPhone 6S</span>
+
+                <div class="product-card__price">
+                  <div class="product-card__newprice">
+                    $
+                    <span class="product-card__num">550.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card__bottom">
+                <button class="product-card__btn" data-del="delete">
+                  <svg class="product-card__icon product-card__icon--remove">
+                    <use xlink:href="images/sprite.svg#remove"></use>
+                  </svg>
+                </button>
+
+                <button class="product-card__btn">
+                  <svg class="product-card__icon product-card__icon--cart">
+                    <use xlink:href="images/sprite.svg#product-cart"></use>
+                  </svg>
+                </button>
+              </div>
+              <a class="link" href="#"></a>
+
+            </article>
+
+
+
+
+
+
+
+            <article class="product-card cf col-3">
+              <div class="product-card__content">
+                <div class="product-card__image">
+                  <button class="product-card__button" data-del="delete">Remove from list</button>
+                  <img class="product-card__img" src="./images/content/products/5.png" alt="images phone">
+
+                </div>
+
+                <span class="product-card__title">iPhone Rose Gold</span>
+
+                <div class="product-card__price">
+                  <div class="product-card__newprice">
+                    $
+                    <span class="product-card__num">280.00</span>
+                  </div>
+
+                  <div class="product-card__oldprice">
+                    $
+                    <span class="product-card__num">649.00</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="product-card__bottom">
+                <button class="product-card__btn" data-del="delete">
+                  <svg class="product-card__icon product-card__icon--remove">
+                    <use xlink:href="images/sprite.svg#remove"></use>
+                  </svg>
+                </button>
+
+                <button class="product-card__btn">
+                  <svg class="product-card__icon product-card__icon--cart">
+                    <use xlink:href="images/sprite.svg#product-cart"></use>
+                  </svg>
+                </button>
+              </div>
+              <a class="link" href="#"></a>
+
+            </article>
+
+            <article class="product-card cf col-3">
+              <div class="product-card__content">
+                <div class="product-card__image">
+                  <button class="product-card__button" data-del="delete">Remove from list</button>
+                  <img class="product-card__img" src="./images/content/products/6.png" alt="images phone">
+
+                </div>
+
+                <span class="product-card__title">Huawei g8 4c</span>
+
+                <div class="product-card__price">
+                  <div class="product-card__newprice">
+                    $
+                    <span class="product-card__num">350.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card__bottom">
+                <button class="product-card__btn" data-del="delete">
+                  <svg class="product-card__icon product-card__icon--remove">
+                    <use xlink:href="images/sprite.svg#remove"></use>
+                  </svg>
+                </button>
+
+                <button class="product-card__btn">
+                  <svg class="product-card__icon product-card__icon--cart">
+                    <use xlink:href="images/sprite.svg#product-cart"></use>
+                  </svg>
+                </button>
+              </div>
+              <a class="link" href="#"></a>
+
+            </article>
+
+            <article class="product-card cf col-3">
+              <div class="product-card__content">
+                <div class="product-card__image">
+                  <button class="product-card__button" data-del="delete">Remove from list</button>
+                  <img class="product-card__img" src="./images/content/products/7.png" alt="images phone">
+
+                </div>
+
+                <span class="product-card__title">Galaxy Core Prime</span>
+
+                <div class="product-card__price">
+                  <div class="product-card__newprice">
+                    $
+                    <span class="product-card__num">390.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card__bottom">
+                <button class="product-card__btn" data-del="delete">
+                  <svg class="product-card__icon product-card__icon--remove">
+                    <use xlink:href="images/sprite.svg#remove"></use>
+                  </svg>
+                </button>
+
+                <button class="product-card__btn">
+                  <svg class="product-card__icon product-card__icon--cart">
+                    <use xlink:href="images/sprite.svg#product-cart"></use>
+                  </svg>
+                </button>
+              </div>
+              <a class="link" href="#"></a>
+
+            </article>
+
+            <article class="product-card cf col-3">
+              <div class="product-card__content">
+                <div class="product-card__image">
+                  <button class="product-card__button" data-del="delete">Remove from list</button>
+                  <img class="product-card__img" src="./images/content/products/8.png" alt="images phone">
+
+                </div>
+
+                <span class="product-card__title">Apple iPhone 6S</span>
+
+                <div class="product-card__price">
+                  <div class="product-card__newprice">
+                    $
+                    <span class="product-card__num">550.00</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card__bottom">
+                <button class="product-card__btn" data-del="delete">
+                  <svg class="product-card__icon product-card__icon--remove">
+                    <use xlink:href="images/sprite.svg#remove"></use>
+                  </svg>
+                </button>
+
+                <button class="product-card__btn">
+                  <svg class="product-card__icon product-card__icon--cart">
+                    <use xlink:href="images/sprite.svg#product-cart"></use>
+                  </svg>
+                </button>
+              </div>
+              <a class="link" href="#"></a>
+
+            </article>
+
+          </div>
+
+          <div class="pagination">
+
+            <ul class="pagination__list">
+
+              <!-- <li class="pagination__item">
+
+      <span class="pagination__num pagination__link pagination__link--active">
+
+        0
+
+      </span>
+
+    </li> -->
+              <!-- 
+    <li class="pagination__item">
+
+      <span class="pagination__num pagination__link">
+
+        2
+
+      </span>
+
+    </li>
+
+    <li class="pagination__item">
+
+      <span class="pagination__num pagination__link">
+
+        3
+
+      </span>
+
+    </li>
+
+    <li class="pagination__item">
+
+      <span class="pagination__num pagination__link">
+
+        4
+
+      </span>
+
+    </li> -->
+
+
+
+              <!-- 
+
+    <span class="pagination__end" href="#">
+
+      ...
+
+    </span> -->
+
+
+
+            </ul>
+            <!-- 
+  <a class="pagination__next" href="#">
+
+    Next
+
+  </a> -->
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="store-features">
+      <div class="container">
+        <div class="store-features__wrapper">
+          <div class="store-features__slider">
+            <div class="store-features__items">
+              <article class="store-features__item">
+                <div class="store-features__inner">
+                  <svg class="store-features__icon">
+                    <use xlink:href="images/sprite.svg#hand"></use>
+                  </svg>
+
+                  <div class="store-features__box">
+                    <div class="store-features__title">
+                      Full warrenty
+                    </div>
+
+                    <p class="store-features__text">
+                      Read About Out Warrenty
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="store-features__item">
+                <div class="store-features__inner">
+                  <svg class="store-features__icon">
+                    <use xlink:href="images/sprite.svg#truck"></use>
+                  </svg>
+
+                  <div class="store-features__box">
+                    <div class="store-features__title">
+                      Express shipping
+                    </div>
+
+                    <p class="store-features__text">
+                      Local & International Shipping
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="store-features__item">
+                <div class="store-features__inner">
+                  <svg class="store-features__icon">
+                    <use xlink:href="images/sprite.svg#blog"></use>
+                  </svg>
+
+                  <div class="store-features__box">
+                    <div class="store-features__title">
+                      Mobile blog
+                    </div>
+
+                    <p class="store-features__text">
+                      Discuss Your Favorite Phone
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="store-features__item">
+                <div class="store-features__inner">
+                  <svg class="store-features__icon">
+                    <use xlink:href="images/sprite.svg#support"></use>
+                  </svg>
+
+                  <div class="store-features__box">
+                    <div class="store-features__title">
+                      24/7 Support
+                    </div>
+
+                    <p class="store-features__text">
+                      Get Full Support Via Chat
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="store-features__item">
+                <div class="store-features__inner">
+                  <svg class="store-features__icon">
+                    <use xlink:href="images/sprite.svg#hand"></use>
+                  </svg>
+
+                  <div class="store-features__box">
+                    <div class="store-features__title">
+                      Full warrenty
+                    </div>
+
+                    <p class="store-features__text">
+                      Read About Out Warrenty
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+  </main>
+
+  <footer class="footer">
+
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__inner">
+          <p class="footer__text">
+            subscribe to latest smartphones
+            news & great deals we offer
+          </p>
+
+          <div class="footer__box">
+
+            <form class="footer__form" action="#">
+              <label for="subs-e" class="footer__label">Email address</label>
+              <input id="subs-e" class="footer__form-input" type="email" name="email"
+                placeholder="Enter your email address..." required>
+
+              <button class="footer__form-btn" type="submit">
+                Subscribe
+                <svg class="footer__svg-email">
+                  <use xlink:href="images/sprite.svg#mail"></use>
+                </svg>
+              </button>
+
+            </form>
+
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <svg class="footer__svg footer__svg--twitter">
+                  <use xlink:href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </li>
+
+              <li class="footer__social-item">
+                <svg class="footer__svg footer__svg--facebook">
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+              </li>
+
+              <li class="footer__social-item">
+                <svg class="footer__svg footer__svg--linkedin">
+                  <use xlink:href="images/sprite.svg#linkedin"></use>
+                </svg>
+              </li>
+
+              <li class="footer__social-item">
+                <svg class="footer__svg footer__svg--google">
+                  <use xlink:href="images/sprite.svg#google"></use>
+                </svg>
+              </li>
+
+              <li class="footer__social-item">
+                <svg class="footer__svg footer__svg--pintest">
+                  <use xlink:href="images/sprite.svg#pintest"></use>
+                </svg>
+              </li>
+
+              <li class="footer__social-item">
+                <svg class="footer__svg footer__svg--youtube">
+                  <use xlink:href="images/sprite.svg#youtube"></use>
+                </svg>
+              </li>
+
+              <li class="footer__social-item">
+                <svg class="footer__svg footer__svg--rss">
+                  <use xlink:href="images/sprite.svg#rss"></use>
+                </svg>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__wrapper">
+          <p class="footer__copy">
+            Copyright © 2015 <span>codeitStore</span> All Rights Reserved.
+          </p>
+
+          <div class="footer-partners">
+
+            <ul class="footer-partners__list">
+
+              <li class="footer-partners__item">
+
+                <a class="footer-partners__link" href="#">
+                  <img class="footer-partners__img" src="./images/content/partners/1.png" alt="partners images">
+                </a>
+
+              </li>
+
+              <li class="footer-partners__item">
+
+                <a class="footer-partners__link" href="#">
+                  <img class="footer-partners__img" src="./images/content/partners/2.png" alt="partners images">
+                </a>
+              </li>
+
+              <li class="footer-partners__item">
+
+                <a class="footer-partners__link" href="#">
+                  <img class="footer-partners__img" src="./images/content/partners/3.png" alt="partners images">
+                </a>
+
+              </li>
+
+              <li class="footer-partners__item">
+
+                <a class="footer-partners__link" href="#">
+                  <img class="footer-partners__img" src="./images/content/partners/4.png" alt="partners images">
+                </a>
+
+              </li>
+
+              <li class="footer-partners__item">
+
+                <a class="footer-partners__link" href="#">
+                  <img class="footer-partners__img" src="./images/content/partners/5.png" alt="partners images">
+                </a>
+
+              </li>
+
+              <li class="footer-partners__item">
+
+                <a class="footer-partners__link" href="#">
+                  <img class="footer-partners__img" src="./images/content/partners/6.png" alt="partners images">
+                </a>
+
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </footer>
+
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
