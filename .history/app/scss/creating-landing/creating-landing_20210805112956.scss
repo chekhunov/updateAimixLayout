@@ -1,0 +1,44 @@
+.top {
+  padding-top: 35px;
+  margin-bottom: 100px;
+  background-color: #E5E5E5;
+  background: linear-gradient(180deg, #EDEDED -7.05%, rgba(255, 255, 255, 0) 100%);
+  color: #3B3B3B;
+
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    & span {
+      color: #4D68EA;
+    }
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__headline {
+    margin-bottom: 70px;
+  }
+
+  &__body {
+    display: flex;
+  }
+
+  &__images {
+    margin-left: -55px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 68px;
+  }
+}

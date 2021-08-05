@@ -1,0 +1,15 @@
+.top {
+  background-color: #E5E5E5;
+  background: linear-gradient(180deg, #EDEDED -7.05%, rgba(255, 255, 255, 0) 100%);
+
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #3B3B3B;
+
+    & span {
+      color: #4D68EA;
+      text-transform: uppercase;
+    }
+  }
+}
