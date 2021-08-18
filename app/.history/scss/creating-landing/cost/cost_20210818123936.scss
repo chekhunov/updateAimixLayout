@@ -1,0 +1,64 @@
+.general-caption {
+  padding-left: 20px;
+}
+
+.main-caption-m {
+  &--cost {
+    margin-bottom: 50px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #3b3b3b;
+  }
+}
+
+.cost {
+  &__items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include _1024 {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: calc(36% - 15px);
+    height: 138px;
+    padding: 30px 15px 30px 30px;
+    display: flex;
+    align-items: center;
+
+    .rectangle {
+      position: absolute;
+      background-color: #d6f876;
+      height: 100%;
+      width: 70%;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+
+      &--blue {
+        background-color: #76c1f8;
+      }
+      &--violet {
+        background-color: #f576f8;
+      }
+    }
+
+    & p {
+      position: relative;
+      max-width: 340px;
+      color: #000;
+      font-size: 20px;
+      line-height: 130%;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.general-caption {
+  padding-left: 20px;
+}
+
+.main-caption-m {
+  &--cost {
+    margin-bottom: 50px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #3b3b3b;
+
+    @include _767 {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.cost {
+  margin-bottom: 100px;
+
+  @include _1024 {
+    margin-bottom: 70px;
+  }
+
+  @include _767 {
+    margin-bottom: 50px;
+  }
+
+  &__items {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include _1024 {
+      padding: 0 82px;
+      flex-direction: column;
+    }
+
+    @include _767 {
+      padding: 0;
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: calc(36% - 15px);
+    height: 138px;
+    padding: 30px 15px 30px 30px;
+    display: flex;
+    align-items: center;
+
+    @include _1024 {
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @include _767 {
+      padding: 35px 20px;
+    }
+
+    .rectangle {
+      position: absolute;
+      background-color: #d6f876;
+      height: 100%;
+      width: 70%;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+
+      @include _1024 {
+        width: 100%;
+      }
+
+      &--blue {
+        background-color: #76c1f8;
+      }
+      &--violet {
+        background-color: #f576f8;
+      }
+    }
+
+    & p {
+      position: relative;
+      max-width: 340px;
+      color: #000;
+      font-size: 20px;
+      line-height: 130%;
+      text-transform: uppercase;
+      letter-spacing: 0;
+
+      @include _767 {
+        font-size: 18px;
+      }
+    }
+  }
+}

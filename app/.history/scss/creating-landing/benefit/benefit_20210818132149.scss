@@ -1,0 +1,38 @@
+.general-caption {
+  padding-left: 20px;
+}
+
+.main-caption-m {
+  &--benefit {
+    margin-bottom: 50px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #3b3b3b;
+
+    @include _767 {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.benefit {
+  margin-bottom: 70px;
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: calc(50% - 20px);
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 25px;
+  }
+
+  &__body {
+  }
+}

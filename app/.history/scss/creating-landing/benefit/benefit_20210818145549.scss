@@ -1,0 +1,144 @@
+.general-caption {
+  padding-left: 20px;
+}
+
+.main-caption-m {
+  &--benefit {
+    margin-bottom: 50px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #3b3b3b;
+
+    @include _767 {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.benefit {
+  margin-bottom: 70px;
+
+  &__inner {
+    margin-bottom: 100px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include _1024 {
+      padding-left: 82px;
+      flex-direction: column;
+    }
+  }
+
+  &__list-item {
+    width: calc(50% - 20px);
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 25px;
+  }
+
+  &__content {
+    color: #3b3b3b;
+    padding: 100px 0;
+    line-height: 130%;
+    background: linear-gradient(180deg, rgba(220, 220, 220, 0.2) 0%, rgba(220, 220, 220, 0) 100%);
+  }
+
+  &__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: 361px;
+    display: flex;
+
+    @include _767 {
+      display: none;
+    }
+  }
+
+  .left {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+
+    .text {
+      height: 361px;
+      top: 0%;
+      width: 200%;
+      font-size: 68px;
+      line-height: 130%;
+      font-weight: 200;
+      left: 0;
+      text-transform: uppercase;
+      text-align: left;
+    }
+  }
+
+  .left-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .text {
+    right: 0;
+
+    transform: translateX(0%);
+  }
+
+  .right {
+    position: relative;
+    width: 50%;
+    font-size: 48px;
+    color: #fff;
+    background-color: #000;
+    overflow: hidden;
+
+    &::after {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      mix-blend-mode: lighten;
+      content: '';
+      background-image: url('../img/2.jpg');
+      background-repeat: no-repeat;
+    }
+    .text {
+      position: absolute;
+      height: 361px;
+      top: 0%;
+      width: 200%;
+      font-size: 68px;
+      line-height: 130%;
+      font-weight: 200;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: left;
+
+      &--black {
+        color: black;
+      }
+    }
+  }
+
+  .right-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+}

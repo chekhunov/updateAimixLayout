@@ -1,0 +1,28 @@
+.general-caption {
+  padding-left: 20px;
+}
+
+.main-caption-m {
+  &--cost {
+    margin-bottom: 50px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #3b3b3b;
+  }
+}
+
+.cost {
+  &__items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    width: calc(33% - 30px);
+    height: 138px;
+  }
+}
