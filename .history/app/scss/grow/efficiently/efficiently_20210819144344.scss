@@ -1,0 +1,10 @@
+.efficiently {
+  &__content {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../');
+    }
+  }
+}

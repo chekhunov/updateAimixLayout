@@ -1,0 +1,13 @@
+.efficiently {
+  &__content {
+    position: relative;
+    &::after {
+      right: 0;
+      content: '';
+      position: absolute;
+      background-image: url('../img/grow/efficiently/efficiently.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
