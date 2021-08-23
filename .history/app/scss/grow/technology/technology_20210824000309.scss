@@ -1,0 +1,26 @@
+.technology {
+  margin-bottom: 100px;
+
+  @include _1024 {
+    margin-bottom: 70px;
+  }
+  @include _767 {
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    padding-top: 50px;
+    font-size: 18px;
+    line-height: 150%;
+
+    @include _767 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}

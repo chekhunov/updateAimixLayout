@@ -1,0 +1,23 @@
+.garanti {
+  &__item {
+    width: calc(31.5%);
+    height: 368px;
+    filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+
+    &--first {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url('../img/grow/garanti/1.png');
+      }
+    }
+  }
+}

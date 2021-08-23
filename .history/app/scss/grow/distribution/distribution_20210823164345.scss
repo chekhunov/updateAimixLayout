@@ -1,0 +1,8 @@
+.distribution {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__left {
+    background-color: #3b3b3b;
+  }
+}

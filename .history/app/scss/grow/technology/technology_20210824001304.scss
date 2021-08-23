@@ -1,0 +1,45 @@
+.technology {
+  margin-bottom: 100px;
+
+  @include _1024 {
+    margin-bottom: 70px;
+  }
+  @include _767 {
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    padding-top: 50px;
+
+    @include _767 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @include _767 {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: bold;
+    &:not(:last-child) {
+      margin-right: 106px;
+    }
+  }
+
+  &__sublist {
+    padding-top: 20px;
+    padding-left: 25px;
+    font-weight: normal;
+    list-style-type: decimal;
+  }
+}

@@ -1,0 +1,114 @@
+.distribution {
+  margin-bottom: 100px;
+
+  @include _1024 {
+    margin-bottom: 70px;
+  }
+  @include _767 {
+    margin-bottom: 50px;
+  }
+
+  &__inner {
+    height: 491px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include _1024 {
+      height: 100%;
+      flex-direction: column;
+    }
+  }
+
+  &__left,
+  &__right {
+    height: 100%;
+    padding: 0 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+
+    @include _1024 {
+      padding: 70px 55px;
+    }
+  }
+
+  &__left {
+    width: calc(55%);
+    margin-right: 3px;
+    background-color: #3b3b3b;
+
+    @include _1200 {
+      width: calc(50%);
+    }
+
+    @include _1024 {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 2px;
+    }
+  }
+
+  &__right {
+    width: calc(45%);
+    background-color: #4d68ea;
+
+    @include _1200 {
+      width: calc(50%);
+    }
+    @include _1024 {
+      width: 100%;
+    }
+  }
+
+  .blockquote {
+    padding-top: 50px;
+    font-size: 22px;
+
+    &__author {
+      padding-top: 30px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__desc {
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 14px;
+    }
+
+    &__icon {
+      margin-bottom: 20px;
+    }
+  }
+
+  .general-caption span {
+    margin-bottom: 20px;
+  }
+
+  &__right-item {
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+
+    & span {
+      font-size: 96px;
+      line-height: 130%;
+    }
+
+    &:last-child {
+      color: #3b3b3b;
+    }
+  }
+
+  &__right-desc {
+    margin-left: 50px;
+    font-size: 24px;
+    line-height: 130%;
+  }
+}

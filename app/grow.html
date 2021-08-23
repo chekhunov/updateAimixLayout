@@ -22,14 +22,14 @@
         </div>
       </div>
       <div class="grow__images">
-        <img src="../img/grow/slide1.jpg" alt="creating project">
-        <img src="../img/grow/slide2.jpg" alt="creating project">
+        <img class="grow__left" src="../img/grow/slide1.jpg" alt="creating project">
+        <img class="grow__right" src="../img/grow/slide2.jpg" alt="creating project">
       </div>
 
       <div class="container">
         <div class="grow__variants variants">
           <div class="variants__item">
-            <img src="../img/grow/icon1.svg" alt="startup">
+            <img class="variants__icon" src="../img/grow/icon1.svg" alt="startup">
             <div class="variants__item-desc">
               <span class="variants__desc-accent">Для стартапов</span>
               <span>MVP, партнерские условия</span>
@@ -37,7 +37,7 @@
           </div>
 
           <div class="variants__item">
-            <img src="../img/grow/icon2.svg" alt="startup">
+            <img class="variants__icon" src="../img/grow/icon2.svg" alt="startup">
             <div class="variants__item-desc">
               <span class="variants__desc-accent">Для развивающегося бизнеса</span>
               <span>анализ конкурентов, бизнес-анализ</span>
@@ -45,7 +45,7 @@
           </div>
 
           <div class="variants__item">
-            <img src="../img/grow/icon3.svg" alt="startup">
+            <img class="variants__icon" src="../img/grow/icon3.svg" alt="startup">
             <div class="variants__item-desc">
               <span class="variants__desc-accent">Для нового бизнеса</span>
               <span>Новые ниши, готовые решения</span>
@@ -62,49 +62,73 @@
 
         <div class="about-program__inner">
           <div class="about-program__content">
-            <p>Программа позволяющая украинскому бизнесу заказывать web/mobile разработку по цене в 2-4 раза ниже
-              средней рыночной.</p>
-            <p>При этом качество и номинальная стоимость конечного продукта сохраняется. </p>
+            <p class="about-program__headline">Программа позволяющая украинскому бизнесу заказывать web/mobile
+              разработку по цене в 2-4 раза ниже
+              средней рыночной.
+            </p>
+
+            <div class="about-program__content-bottom">
+              <p class="about-program__desc">При этом <span style="font-weight: bold">качество</span> и номинальная
+                стоимость конечного продукта сохраняется.
+              </p>
+              <div class="about-program__icons">
+  <img class="about-program__icon" src="../img/grow/about-program/icon1.svg" alt="about-program">
+  <img class="about-program__icon" src="../img/grow/about-program/icon2.svg" alt="about-program">
+  <img class="about-program__icon" src="../img/grow/about-program/icon3.svg" alt="about-program">
+</div>
+            </div>
           </div>
 
           <div class="about-program__icons">
-            <img src="../img/grow/about-program/icon1.svg" alt="about-program">
-            <img src="../img/grow/about-program/icon2.svg" alt="about-program">
-            <img src="../img/grow/about-program/icon3.svg" alt="about-program">
-          </div>
+  <img class="about-program__icon" src="../img/grow/about-program/icon1.svg" alt="about-program">
+  <img class="about-program__icon" src="../img/grow/about-program/icon2.svg" alt="about-program">
+  <img class="about-program__icon" src="../img/grow/about-program/icon3.svg" alt="about-program">
+</div>
+
         </div>
       </div>
     </section>
 
     <section class="distribution">
-      <div class="general-caption general-caption--cost">Разработка сложных проектов</div>
-      <h2 class="main-caption-s">Распределение сложности</h2>
 
-      <div class="distribution__inner">
-        <div class="distribution__left">
-          <blockquote class="blockquote">
-            “Обычно <strong>сложные проекты</strong> является таковым лишь в каком-то отдельно взятом аспекте.
+      <div class="container">
+        <div class="distribution__inner">
+          <div class="distribution__left">
 
-            <div class="blockquote__author">
-              <img src="./img/blockquote/andre.png" alt="general director">
+            <div class="general-caption general-caption--cost">Разработка сложных проектов</div>
+            <h2 class="main-caption-s">Распределение сложности</h2>
 
-              <div class="blockquote__desc">
-                <span>Андрей</span>
-                <span>Разработчик, php-программист</span>
+            <blockquote class="blockquote">
+              <svg class="blockquote__icon" width="23" height="16" viewBox="0 0 23 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22.208 0.303997C21.6107 2.77866 21.0133 5.46667 20.416 8.368C19.8187 11.2267 19.3493 13.7653 19.008 15.984H12.928L12.48 15.28C13.0773 13.0187 13.888 10.544 14.912 7.856C15.936 5.12533 16.9813 2.608 18.048 0.303997H22.208ZM10.368 0.303997C9.77067 2.77866 9.17333 5.46667 8.576 8.368C7.97867 11.2267 7.50933 13.7653 7.168 15.984H1.152L0.768 15.28C1.36533 13.0187 2.15467 10.544 3.136 7.856C4.16 5.12533 5.20533 2.608 6.272 0.303997H10.368Z"
+                  fill="white" />
+              </svg>
+              <br>Обычно <strong>сложные проекты</strong> является таковым лишь в каком-то отдельно взятом
+              аспекте.
+
+              <div class="blockquote__author">
+                <img src="./img/blockquote/andre.png" alt="general director">
+
+                <div class="blockquote__desc">
+                  <span style="font-weight: bold; font-size: 16px">Андрей</span>
+                  <span>Разработчик, php-программист</span>
+                </div>
               </div>
-            </div>
-          </blockquote>
-        </div>
-
-        <div class="distribution__right">
-          <div class="distribution__right-item"><span>70</span>%
-            <p>Базовые задачи
-              уровня <strong>junior</strong></p>
+            </blockquote>
           </div>
 
-          <div class="distribution__right-item"><span>30</span>%
-            <p>Сложные задачи
-              уровня <strong>middle</strong> и <strong>senior</strong></p>
+          <div class="distribution__right">
+            <div class="distribution__right-item"><span><span class="distribution__right-num">70</span>%</span>
+              <p class="distribution__right-desc">Базовые задачи
+                уровня <strong>junior</strong></p>
+            </div>
+
+            <div class="distribution__right-item"><span><span class="distribution__right-num">30</span>%</span>
+              <p class="distribution__right-desc">Сложные задачи
+                уровня <strong>middle</strong> и <strong>senior</strong></p>
+            </div>
           </div>
         </div>
       </div>
@@ -117,7 +141,8 @@
 
         <div class="solutions__items">
           <div class="solutions__item">
-            <span class="solutions__item-num">10</span>/<p class="solutions__item-text">Для
+            <span class="solutions__item-num">10<span class="solutions__item-dec">/</span></span>
+            <p class="solutions__item-text">Для
               <strong>проектирования</strong>, <strong>контроля
                 качества</strong>, <strong>менторства</strong> и
               решения <strong>ключевых задач</strong> мы привлекаем специалистов уровня <span
@@ -127,7 +152,8 @@
           </div>
 
           <div class="solutions__item">
-            <span class="solutions__item-num">20</span>/<p class="solutions__item-text">Для решения базовых задач,
+            <span class="solutions__item-num">20<span class="solutions__item-dec">/</span></span>
+            <p class="solutions__item-text">Для решения базовых задач,
               которые обычно составляют <strong>70-80%</strong> от общего объема – специалистов уровня <span
                 style="color: #4D68EA; font-weight: bold;">junior</span>.
             </p>
@@ -142,9 +168,12 @@
         <h2 class="main-caption-s">Эффективно и разумно</h2>
 
         <div class="efficiently__content">
-          <p>В итоге <strong>высококвалифицированные</strong> специалисты не выполняют рутинную для себя работу, а
+          <p class="efficiently__text">В итоге <strong>высококвалифицированные</strong> специалисты не выполняют
+            рутинную для себя работу, а
             <strong>клиент НЕ оплачивает</strong> их время по ставке $40-80/час. на протяжение всего проекта.
           </p>
+
+          <img class="efficiently__img" src="../img/grow/efficiently/efficiently.jpg" alt="created project">
         </div>
 
         <div class="additional-services__promotions promotions">
@@ -169,7 +198,7 @@
             <li class="technology__item">
               Javascript
 
-              <ul class="technology__sublist">
+              <ol type="1" start="1" class="technology__sublist">
                 <li class="technology__subitem">React.js</li>
 
                 <li class="technology__subitem">React Native</li>
@@ -185,7 +214,7 @@
                 <li class="technology__subitem">TypeScript</li>
 
                 <li class="technology__subitem">Jquery</li>
-              </ul>
+              </ol>
             </li>
 
             <li class="technology__item">
@@ -222,10 +251,14 @@
 
     <section class="garanti">
       <div class="container">
+
+        <div class="general-caption general-caption--technology">our value</div>
+        <h2 class="main-caption-s">Подход и Гарантии</h2>
         <div class="garanti__items">
-          <div class="garanti__item">
+          <div class="garanti__item garanti__item--first">
             <span>01.</span>
-            <p>Проектирование всех ваших проектов специалистами уровня <span style="color: #8BE860">senior</span></p>
+            <p class="garanti__text">Проектирование всех ваших проектов специалистами уровня <span
+                style="color: #8BE860">senior</span></p>
 
             <div class="garanti__icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -240,9 +273,10 @@
             </div>
           </div>
 
-          <div class="garanti__item">
+          <div class="garanti__item garanti__item--second">
             <span>02.</span>
-            <p>Контроль качества написания кода специалистами уровня <span style="color: #8BE860">senior</span></p>
+            <p class="garanti__text">Контроль качества написания кода специалистами уровня <span
+                style="color: #8BE860">senior</span></p>
 
             <div class="garanti__icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -268,9 +302,9 @@
             </div>
           </div>
 
-          <div class="garanti__item">
+          <div class="garanti__item garanti__item--third">
             <span>03.</span>
-            <p>Тестирование программного обеспечения и составление документации</p>
+            <p class="garanti__text">Тестирование программного обеспечения и составление документации</p>
 
             <div class="garanti__icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

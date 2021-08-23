@@ -1,0 +1,91 @@
+.garanti {
+  margin-bottom: 100px;
+
+  @include _1024 {
+    margin-bottom: 70px;
+  }
+  @include _767 {
+    margin-bottom: 50px;
+  }
+  &__items {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include _1024 {
+      flex-direction: column;
+    }
+
+    @include _767 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    width: calc(31.5%);
+    height: 368px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 130%;
+    color: #fff;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+    z-index: 10;
+
+    @include _1024 {
+      width: 50%;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @include _767 {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &--first,
+    &--second,
+    &--third {
+      border-radius: 5px;
+    }
+
+    &--first {
+      background-image: url('../img/grow/garanti/1.png');
+    }
+    &--second {
+      background-image: url('../img/grow/garanti/2.png');
+    }
+    &--third {
+      background-image: url('../img/grow/garanti/3.png');
+    }
+  }
+
+  &__text {
+    padding-top: 10px;
+    font-size: 24px;
+    line-height: 110%;
+  }
+
+  &__icon {
+    width: 50px;
+    height: 50px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(96, 113, 204, 0.1);
+    border-radius: 5px;
+  }
+}

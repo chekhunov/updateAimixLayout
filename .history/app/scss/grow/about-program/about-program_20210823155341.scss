@@ -1,0 +1,62 @@
+.about-program {
+  margin-bottom: 100px;
+
+  color: #3b3b3b;
+  &__inner {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 500px;
+    margin-right: 50px;
+  }
+
+  &__headline {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+
+    @include _1024 {
+      display: none;
+    }
+  }
+
+  &__icon:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__desc {
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  &__content-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .about-program__icons {
+      display: none;
+
+      @include _1024 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__icon:not(:last-child) {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

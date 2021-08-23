@@ -1,0 +1,10 @@
+@import 'main';
+@import 'vars'; //переменные для цвета для шрифта
+@import 'fonts'; // подключение шрифтов
+@import 'reset'; //сброс всех стилей
+@import 'global'; // подключение глобальных стилей типо reset.css, то что на body для сылок
+@import 'libs'; // адаптив
+@import 'components/header'; // адаптив
+@import 'components/footer'; // адаптив
+@import 'creating-landing/creating-landing';
+@import 'grow/grow';

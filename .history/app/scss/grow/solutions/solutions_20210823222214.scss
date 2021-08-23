@@ -1,0 +1,13 @@
+.solutions {
+  margin-bottom: 100px;
+  @include _1024 {
+    margin-bottom: 70px;
+  }
+  @include _767 {
+    margin-bottom: 50px;
+  }
+
+  &__items {
+    padding-top: 50px;
+  }
+}

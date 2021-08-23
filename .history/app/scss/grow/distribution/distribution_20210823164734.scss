@@ -1,0 +1,22 @@
+.distribution {
+  &__inner {
+    height: 491px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    height: 100%;
+    width: calc(50%);
+    background-color: #3b3b3b;
+    color: white;
+  }
+
+  &__right {
+    height: 100%;
+    width: calc(50%);
+    background-color: #4d68ea;
+    color: white;
+  }
+}

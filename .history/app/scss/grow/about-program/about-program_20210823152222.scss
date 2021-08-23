@@ -1,0 +1,36 @@
+.about-program {
+  margin-bottom: 100px;
+  &__inner {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 500px;
+  }
+
+  &__headline {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__desc {
+    font-size: 18px;
+    line-height: 130%;
+  }
+}

@@ -1,0 +1,37 @@
+.technology {
+  margin-bottom: 100px;
+
+  @include _1024 {
+    margin-bottom: 70px;
+  }
+  @include _767 {
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    padding-top: 50px;
+
+    @include _767 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__item {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: bold;
+    &:not(:last-child) {
+      margin-right: 106px;
+    }
+  }
+
+  &__sublist {
+    font-weight: normal;
+  }
+}

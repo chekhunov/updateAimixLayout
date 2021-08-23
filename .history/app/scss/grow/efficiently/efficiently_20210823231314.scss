@@ -1,0 +1,110 @@
+.efficiently {
+  &__content {
+    width: 100%;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__text {
+    max-width: 620px;
+  }
+  //   position: relative;
+  //   &::after {
+  //     position: absolute;
+  //     top: 0;
+  //     right: 0;
+  //     content: '';
+  //     background-image: url('../img/grow/efficiently/efficiently.jpg');
+  //     background-repeat: no-repeat;
+  //     background-size: cover;
+  //   }
+  // }
+
+  .additional-services__promotions {
+    margin-bottom: 100px;
+    padding: 100px 0;
+    background-color: #4d68ea;
+
+    @include _1024 {
+      margin-bottom: 70px;
+      padding: 70px;
+    }
+
+    @include _767 {
+      margin-left: -15px;
+      margin-bottom: 50px;
+      padding: 50px 15px;
+    }
+  }
+
+  .promotions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include _767 {
+      width: 107%;
+    }
+    &__meta {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+      text-transform: uppercase;
+      color: #000000;
+
+      @include _1024 {
+        font-size: 24px;
+      }
+
+      @include _767 {
+        margin-bottom: 17px;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 40px;
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 78px;
+      text-transform: uppercase;
+      color: #8be860;
+
+      @include _1024 {
+        margin-bottom: 70px;
+        font-size: 48px;
+        text-align: center;
+      }
+
+      @include _767 {
+        margin-bottom: 30px;
+        font-size: 24px;
+        text-align: center;
+        line-height: 29px;
+      }
+    }
+
+    &__price {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+      color: #ffffff;
+      margin-bottom: 5px;
+    }
+
+    &__desc {
+      line-height: 22px;
+      font-size: 18px;
+      color: #ffffff;
+
+      @include _767 {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+}

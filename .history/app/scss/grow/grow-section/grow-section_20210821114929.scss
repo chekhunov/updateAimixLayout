@@ -1,0 +1,30 @@
+.grow {
+  padding: 75px 0 96px;
+
+  &__title,
+  &__desc {
+    color: #3b3b3b;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__title {
+    max-width: 370px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+
+    white-space: nowrap;
+  }
+
+  &__desc {
+    max-width: 546px;
+    height: 46px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}

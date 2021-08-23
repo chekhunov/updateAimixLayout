@@ -1,0 +1,12 @@
+.distribution {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__left {
+    width: calc(50%);
+    background-color: #3b3b3b;
+    color: white;
+  }
+}

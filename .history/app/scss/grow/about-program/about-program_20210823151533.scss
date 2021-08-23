@@ -1,0 +1,25 @@
+.about-program {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+  }
+
+  &__content {
+    max-width: 500px;
+  }
+
+  &__headline {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+  }
+  &__icon:not(:last-child) {
+    margin-right: 20px;
+  }
+}
