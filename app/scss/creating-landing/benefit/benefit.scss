@@ -6,6 +6,11 @@
   
   .main-caption-s {
     margin-bottom: 54px;
+
+    @include _1024 {
+      margin-bottom: 50px;
+    }
+
     @include _767 {
       margin-bottom: 30px;
     }
@@ -18,7 +23,7 @@
   }
 
   @include _767 {
-    margin-bottom: 65px;
+    margin-bottom: 50px;
   }
 
   &__inner {
@@ -64,7 +69,14 @@
     }
 
     @include _767 {
+      margin-bottom: 20px;
       font-size: 18px;
+    }
+  }
+
+  &__item {
+    @include _767 {
+      text-transform: uppercase;
     }
   }
 
@@ -88,6 +100,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-right: -55px;
+
+    @include _1024 {
+      margin-right: 0;
+    }
   }
 
   .wrapper {
@@ -95,6 +112,7 @@
     width: 100%;
     height: 361px;
     display: flex;
+    justify-content: space-between;
 
     @include _767 {
       display: none;
@@ -229,7 +247,6 @@
       line-height: 130%;
       display: flex;
       justify-content: flex-end;
-      text-transform: uppercase;
       color: #3b3b3b;
     }
   }

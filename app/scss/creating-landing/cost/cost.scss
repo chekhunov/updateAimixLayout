@@ -7,6 +7,10 @@
   .main-caption-s {
     margin-bottom: 54px;
 
+    @include _1024 {
+      margin-bottom: 50px;
+    }
+
     @include _767 {
       margin-bottom: 30px;
     }
@@ -49,7 +53,7 @@
     @include _1024 {
       width: 100%;
       &:not(:last-child) {
-        margin-bottom: 35px;
+        margin-bottom: 20px;
       }
     }
 

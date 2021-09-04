@@ -62,6 +62,10 @@
     position: relative;
     display: flex;
     margin-bottom: 100px;
+
+    @include _767 {
+      margin-bottom: 50px;
+    }
   }
 
   &__inner-images {
@@ -117,6 +121,10 @@
     background-color: #000;
     overflow: hidden;
 
+    @include _1024 {
+      margin-left: -44px;
+    }
+
     &::after {
       position: absolute;
       width: 100%;
@@ -153,6 +161,11 @@
     text-transform: uppercase;
     text-align: right;
 
+    @include _1024 {
+      top: 18%;
+      font-size: 48px;
+    }
+
     &--black {
       color: black;
     }
@@ -184,6 +197,14 @@
 
     & p:not(:last-child) {
       margin-bottom: 30px;
+
+      @include _1024 {
+        margin-bottom: 40px;
+      }
+
+      @include _767 {
+        margin-bottom: 30px;
+      }
     }
 
     @include _767 {

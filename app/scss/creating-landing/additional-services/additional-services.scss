@@ -1,10 +1,11 @@
-.general-caption {
-  padding-left: 20px;
-}
 
 .additional-services {
+  .general-caption {
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
   .main-caption-s {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     @include _767 {
       margin-bottom: 30px;
     }
@@ -31,7 +32,7 @@
   &__items {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 150px;
+    padding-bottom: 145px;
 
     @include _1024 {
       width: 100%;
@@ -63,6 +64,7 @@
       }
 
       @include _767 {
+        margin-bottom: 5px;
         font-size: 18px;
       }
     }
@@ -73,7 +75,13 @@
       display: flex;
 
       &:not(:last-child) {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+      }
+    }
+
+    @include _767 {
+      &:not(:last-child) {
+        margin-bottom: 20px;
       }
     }
   }
@@ -143,7 +151,7 @@
 
     @include _1024 {
       margin-bottom: 70px;
-      padding: 70px;
+      padding: 70px 20px;
     }
 
     @include _767 {
@@ -163,6 +171,7 @@
       width: 107%;
     }
     &__meta {
+      margin-bottom: 15px;
       font-weight: 600;
       font-size: 36px;
       line-height: 44px;
@@ -228,9 +237,13 @@
     flex-direction: column;
     align-items: center;
 
+    @include _767 {
+      align-items: flex-start;
+    }
+
     &__meta {
       font-weight: bold;
-      margin-bottom: 50px;
+      margin-bottom: 45px;
 
       @include _767 {
         margin-bottom: 30px;
@@ -238,6 +251,7 @@
     }
 
     &__title {
+      margin-bottom: 5px;
       font-size: 48px;
       line-height: 58px;
       text-transform: uppercase;
