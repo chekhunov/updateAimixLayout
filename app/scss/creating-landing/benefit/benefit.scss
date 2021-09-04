@@ -1,9 +1,11 @@
-.general-caption {
-  padding-left: 20px;
-}
 .benefit {
+  .general-caption {
+    padding-left: 20px;
+    margin-bottom: 9px;
+  }
+  
   .main-caption-s {
-    margin-bottom: 50px;
+    margin-bottom: 54px;
     @include _767 {
       margin-bottom: 30px;
     }
@@ -34,6 +36,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -40px;
 
     @include _1024 {
       padding-left: 82px;
@@ -46,11 +49,15 @@
   }
 
   &__list-item {
-    width: calc(50% - 20px);
+    width: calc(52% - 40px);
     font-size: 24px;
     line-height: 36px;
     color: #000000;
     margin-bottom: 25px;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
 
     @include _1024 {
       width: 100%;

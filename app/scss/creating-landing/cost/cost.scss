@@ -1,9 +1,11 @@
-.general-caption {
-  padding-left: 20px;
-}
 .cost {
+  .general-caption {
+    padding-left: 20px;
+    margin-bottom: 8px;
+  }
+
   .main-caption-s {
-    margin-bottom: 50px;
+    margin-bottom: 54px;
 
     @include _767 {
       margin-bottom: 30px;
@@ -38,16 +40,16 @@
 
   &__item {
     position: relative;
-    width: calc(36% - 15px);
+    width: calc(33% - 17px);
     height: 138px;
-    padding: 30px 15px 30px 30px;
+    padding: 30px 13px 30px 30px;
     display: flex;
     align-items: center;
 
     @include _1024 {
       width: 100%;
       &:not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: 35px;
       }
     }
 
@@ -59,7 +61,7 @@
       position: absolute;
       background-color: #d6f876;
       height: 100%;
-      width: 70%;
+      width: 73%;
       top: 0;
       right: 0;
       left: 0;
