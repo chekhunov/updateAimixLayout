@@ -11,13 +11,16 @@
   }
 
   &__meta {
+    margin-left: 100spx;
     margin-bottom: 70px;
 
     @include _1024 {
+      margin-left: 80px;
       margin-bottom: 50px;
     }
 
     @include _767 {
+      margin-left: 0;
       margin-bottom: 30px;
     }
   }
@@ -84,7 +87,7 @@
   }
 
   &__left {
-    width: calc(60%);
+    width: calc(57%);
     margin-right: 3px;
 
     @include _767 {
@@ -93,7 +96,7 @@
   }
 
   &__right {
-    width: calc(40%);
+    width: calc(43%);
 
     @include _767 {
       display: none;

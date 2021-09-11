@@ -9,6 +9,11 @@
   @include _767 {
     margin-bottom: 50px;
   }
+
+  .main-caption-s {
+    padding-top: 10px;
+  }
+
   &__content {
     width: 100%;
     margin-bottom: 100px;
@@ -39,7 +44,7 @@
     @include _1024 {
       margin-left: 0;
       margin-right: 20px;
-      padding-top: 100px;
+      padding-top: 80px;
     }
 
     @include _767 {
@@ -123,7 +128,7 @@
       color: #8be860;
 
       @include _1024 {
-        margin-bottom: 70px;
+        margin-bottom: 50px;
         font-size: 48px;
         text-align: center;
       }

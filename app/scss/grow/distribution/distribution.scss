@@ -28,6 +28,7 @@
       height: 60%;
     }
   }
+
   &::after {
     content: '';
     position: absolute;
@@ -54,6 +55,10 @@
   }
   @include _767 {
     margin-bottom: 50px;
+  }
+
+  .main-caption-s {
+    padding-top: 10px;
   }
 
   &__inner {

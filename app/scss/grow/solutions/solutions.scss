@@ -1,10 +1,15 @@
 .solutions {
   margin-bottom: 100px;
+
   @include _1024 {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
   @include _767 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+  }
+
+  .main-caption-s {
+    padding-top: 10px;
   }
 
   &__items {
